@@ -1,5 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
-@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600);
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; } 
+
 
 html, body {
   margin: 0px;
@@ -32,7 +34,7 @@ header a {
   height: 60px;
   line-height: 60px;
   text-align: center;
-  font-family: 'Roboto Slab', serif;
+  font-family:'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -127,12 +129,12 @@ header a {
 
 h1 {
   margin: 0px;
-  font-family: 'Roboto Slab', serif;
+  font-family:'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 32px;
 }
 
 p {
-  font-family: 'Noto Sans', sans-serif;
+  font-family:'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
