@@ -56,15 +56,52 @@ header a {
   }
 }
 
-#hero1 {
-  background: url(http://4.bp.blogspot.com/_AQ0vcRxFu0A/S9shDGGyMTI/AAAAAAAAAYk/kn3WTkY2LoQ/s1600/IMG_0714.JPG);
+#aarp {
+  background: url(http://assets.bailey.is/img/parallax/aarp.png);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
 }
 
-#hero2 {
-  background: url(http://nexttriptourism.com/wp-content/uploads/2013/02/Natural-Underground-Rivers.jpg);
+#aphl {
+  background: url(http://assets.bailey.is/img/parallax/aphl.png);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+#exim {
+  background: url(http://assets.bailey.is/img/parallax/exim.png);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+#pewforum {
+  background: url(http://assets.bailey.is/img/parallax/pewforum.png);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+#pewhispanic {
+  background: url(http://assets.bailey.is/img/parallax/pewhispanic.png);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+#pewresearch {
+  background: url(http://assets.bailey.is/img/parallax/pewresearch.png);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+#pewsocialtrends {
+  background: url(http://assets.bailey.is/img/parallax/pewsocialtrends.png);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+#usnews {
+  background: url(http://assets.bailey.is/img/parallax/usnews.png);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
