@@ -40,6 +40,10 @@ header a {
   letter-spacing: 2px;
   font-weight: 700;
 }
+h1 a {
+  color: white;
+  text-decoration: none;
+}
 @media (max-width: 480px) {
   header a {
     width: 100%;
