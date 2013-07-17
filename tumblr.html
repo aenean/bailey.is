@@ -33,7 +33,7 @@
 	        <ul id="pages">
 	            <li class="page site_title"><a href="/">Brian Bailey</a></li>
 	            <li class="page"><a href="/creative">Creative</a></li>
-	            <li class="page ask"><a href="/about">About</a></li>
+	            <li class="page"><a href="/about">About</a></li>
 	            <li class="page"><a href="http://twitter.com/bbaiiey">Twitter</a></li>
 	        </ul>
         </header>
@@ -56,7 +56,7 @@
 	                  	<li class="post text" id="{PostID}">
 	                      	{block:Date} 
 	                            <div class="postmeta">
-	                                <div class="date"><a href="{Permalink}">permalink / {DayOfMonth} {ShortMonth} {Year}</a></div>
+	                                <div class="date"><a href="{Permalink}">{Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a></div>
 	                           	</div>
 	                      	{/block:Date}
 	                        	<div class="regular content">
@@ -70,7 +70,7 @@
 	              	{block:Photo}
 	              		<li class="post photo" id="{PostID}">
 	                   	<div class="postmeta">
-	                   		<div class="date"><a href="{Permalink}">permalink / {DayOfMonth} {ShortMonth} {Year}</a></div>
+	                   		<div class="date"><a href="{Permalink}">{Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a></div>
 	                   	</div>
 	                  	<div class="regular content">
 	                  		{block:Title}
@@ -86,7 +86,7 @@
 	              	{block:Photoset}
 	                  	<li class="post photoset" id="{PostID}">
 	                        <div class="postmeta">
-	                           	<div class="date"><a href="{Permalink}">permalink / {DayOfMonth} {ShortMonth} {Year}</a></div>
+	                           	<div class="date"><a href="{Permalink}">{Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a></div>
 	                        </div>
 	                  		<div class="regular content">
 	                      		<div class="photo_div">
@@ -101,7 +101,7 @@
 	              	{block:Quote}
 	                  	<li class="post quote" id="{PostID}">
 	                      	<!--<div class="postmeta">
-	                           <div class="date"><a href="{Permalink}">permalink / {DayOfMonth} {ShortMonth} {Year}</a></div>
+	                           <div class="date"><a href="{Permalink}">{Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a></div>
 	                       	</div>-->
 	                  		"{Quote}"
 	                      	{block:Source}
@@ -112,7 +112,7 @@
 	              	{block:Link}
 	                  	<li class="post link" id="{PostID}">
 	                  		<div class="postmeta">
-	                       		<div class="date"><a href="{Permalink}">permalink / {DayOfMonth} {ShortMonth} {Year}</a></div>
+	                       		<div class="date"><a href="{Permalink}">{Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a></div>
 	                       	</div>
 	                      	<a href="{URL}" class="link" {Target}>{Name}</a>
 							{block:Description}
@@ -123,7 +123,7 @@
 	              	{block:Chat}
 	                  	<li class="post chat" id="{PostID}">
 	                  		<div class="postmeta">
-	                           	<div class="date"><a href="{Permalink}">permalink / {DayOfMonth} {ShortMonth} {Year}</a></div>
+	                           	<div class="date"><a href="{Permalink}">{Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a></div>
 	                   		</div>
 	                      	{block:Title}
 	                      		<h3><a href="{Permalink}">{Title}</a></h3>
@@ -143,7 +143,7 @@
 	              	{block:Video}
 	                  	<li class="post video" id="{PostID}">
 		                  	<div class="postmeta">
-		                       <div class="date"><a href="{Permalink}">permalink / {DayOfMonth} {ShortMonth} {Year}</a></div>
+		                       <div class="date"><a href="{Permalink}">{Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a></div>
 		                 	</div>
 		                    <div class="regular content">
 		                   		<div class="video-container">
@@ -158,7 +158,7 @@
 	              	{block:Audio}
 	              		<li class="post audio" id="{PostID}">
 	                  		<div class="postmeta">
-	                           	<div class="date"><a href="{Permalink}">permalink / {DayOfMonth} {ShortMonth} {Year}</a></div>
+	                           	<div class="date"><a href="{Permalink}">{Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a></div>
 	                       	</div>
 	                        <div class="regular content">
 	                      		{AudioPlayerBlack}
