@@ -43,16 +43,22 @@ h1 a {
   color: white;
   text-decoration: none;
 }
-@media (max-width: 480px) {
+header a:hover, h1 a:hover {
+  color:#ff5b54;
+  text-decoration: none;
+}
+p a {color:#ff5b54; text-decoration: none;}
+p a:hover {text-decoration: underline;}
+@media (max-width: 529px) {
   header a {
     width: 100%;
   }
 }
-@media (min-width: 481px) {
+/*@media (min-width: 481px) {
   header a {
     width: 50%;
   }
-}
+}*/
 @media (min-width: 769px) {
   header a {
     width: 25%;
@@ -132,7 +138,7 @@ h1 a {
 }
 
 .hero .inner {
-  background: rgba(0, 0, 0, 0.6) url(https://www.zoolz.com/images/siteimges/free/pattern3.png);
+  background: rgba(0, 0, 0, 0.6) url(http://assets.bailey.is/img/pattern3.png);
 }
 
 .copy {
@@ -140,24 +146,30 @@ h1 a {
   vertical-align: middle;
   max-width: 99%;
 }
-@media (max-width: 480px) {
+
+@media (min-width: 1000px) {
   .copy {
     padding: 18px;
+    
+  }
+  .copy p {
+    max-width: 600px;
+    font-size: 20px;
+    line-height: 32px;
   }
 }
-@media (min-width: 481px) {
-  .copy {
-    padding: 12px;
-  }
-}
-@media (min-width: 769px) {
+@media (max-width: 1000px) {
   .copy {
     padding: 18px;
+    
   }
-}
-@media (min-width: 1224px) {
-  .copy {
-    padding: 24px;
+  .copy p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 auto 0 auto;
+    max-width: 600px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 
@@ -172,11 +184,11 @@ h1 a {
 h1 {
   margin: 0px;
   font-family:'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 32px;
+  text-transform: lowercase;
 }
 
 p {
   font-family:'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
 }
