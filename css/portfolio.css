@@ -91,6 +91,9 @@ h1 a {
 }
 #pewresearch {
   background: url(http://assets.bailey.is/img/parallax/pewresearch.png);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 }
 #pewsocialtrends {
   background: url(http://assets.bailey.is/img/parallax/pewsocialtrends.png);
