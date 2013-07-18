@@ -138,7 +138,8 @@ p a:hover {text-decoration: underline;}
 }
 
 .hero .inner {
-  background: rgba(0, 0, 0, 0.6) url(http://assets.bailey.is/img/pattern3.png);
+  background: rgba(0, 0, 0, 0.4);
+  /*  background: rgba(0, 0, 0, 0.4) url(http://assets.bailey.is/img/pattern3.png); */
 }
 
 .copy {
