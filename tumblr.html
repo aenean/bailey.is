@@ -29,16 +29,12 @@
   	</head>
 
 	<body>
-        <header>  
-	        <ul id="pages">
-	            <li class="page site_title"><a href="/">Brian Bailey</a></li>
-	            <li class="page"><a href="http://bailey.is/creative">Portfolio</a></li>
-	            <li class="page"><a href="/about">About</a></li>
-	            <li class="page"><a href="http://twitter.com/bbaiiey">Twitter</a></li>
-	        </ul>
-        </header>
+		<header> 
+			<div class="container">
+		            <p><a href="/">Brian Bailey &#8212;</a><br/><a href="/">Blog</a>, <a href="http://www.twitter.com/bbaiIey">Twitter</a>, <a href="http://bailey.is">About</a></p>
+	        </header>
   	
-  		<div id="container">        
+  		   
 	        {block:HasPages} 
               	{block:Pages}
                    	<div class="regular content">
@@ -54,59 +50,60 @@
 	          	{block:Posts}
 	              	{block:Text}
 	                  	<li class="post text" id="{PostID}">
-	                      	{block:Date} 
-	                            <div class="postmeta">
-	                                <div class="date"><a href="{Permalink}">{Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a></div>
-	                           	</div>
-	                      	{/block:Date}
-	                        	<div class="regular content">
-	                          	{block:Title}
-	                              	<h3><a href="{Permalink}">{Title}</a></h3>
-	                          	{/block:Title}
-	                          		<div class="regular_body">{Body}</div>
-	                  			</div>
+                        	<div class="regular content">
+                          	{block:Title}
+                              	<h3><a href="{Permalink}">{Title}</a></h3>
+                          	{/block:Title}
+                          		<div class="regular_body">{Body}</div>
+                  			</div>
+                  			<p class="meta">
+		                   		<span class="meta"><a href="{Permalink}">{Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a></div>
+		                   	</p>
 	                  	</li>
 	              	{/block:Text}
 	              	{block:Photo}
-	              		<li class="post photo" id="{PostID}">
-	                   	<div class="postmeta">
-	                   		<div class="date"><a href="{Permalink}">{Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a></div>
-	                   	</div>
-	                  	<div class="regular content">
-	                  		{block:Title}
-	                      		<h3><a href="{Permalink}">{Title}</a></h3>
-	                      	{/block:Title}                        
-	                      	<img src="{PhotoURL-500}" alt="{PhotoAlt}"/>
-	                      	{block:Caption}
-	                        	<div class="caption">{Caption}</div>
-	                      	{/block:Caption}
-	                	</div>
-	                  </li>
+	              		<li>
+		              		<div class="photo content">
+			                  	<div class="photo_div">
+			                  		{block:Title}
+			                      		<h3><a href="{Permalink}">{Title}</a></h3>
+			                      	{/block:Title}                        
+			                      	<img src="{PhotoURL-1280}" alt="{PhotoAlt}" class="photo_img"/>
+			                      	{block:Caption}
+			                        	<div class="caption">{Caption}</div>
+			                      	{/block:Caption}
+			                	</div>
+			                   	<p class="meta">
+			                   		<span class="meta"><a href="{Permalink}">{Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a></div>
+			                   	</p>
+		                  </div>
+	              		</li>
 	              	{/block:Photo}
 	              	{block:Photoset}
 	                  	<li class="post photoset" id="{PostID}">
-	                        <div class="postmeta">
-	                           	<div class="date"><a href="{Permalink}">{Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a></div>
-	                        </div>
 	                  		<div class="regular content">
 	                      		<div class="photo_div">
-	                          		{Photoset-500}
+	                          			{block:Photos}
+	                          				<img src="{PhotoURL-1280}" alt="{PhotoAlt}" class="photo_img"/>
+	                          			{/block:Photos}
 	                          	</div>
 	                      		{block:Caption}
 	                          		<div class="caption">{Caption}</div>
 	                          	{/block:Caption}
 	                        </div>
+                  			<p class="meta">
+		                   		<span class="meta"><a href="{Permalink}">{Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a></div>
+		                   	</p>
 	                      </li>
 	              	{/block:Photoset}
 	              	{block:Quote}
-	                  	<li class="post quote" id="{PostID}">
-	                      	<!--<div class="postmeta">
-	                           <div class="date"><a href="{Permalink}">{Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a></div>
-	                       	</div>-->
-	                  		"{Quote}"
-	                      	{block:Source}
-	                          	<div class="source">{Source}</div>
-	                      	{/block:Source}
+	                  	<li class="post text" id="{PostID}">
+	                  		<div class="regular content regular_body">
+		                  		<p>"{Quote}"<br/>
+		                      	{block:Source}
+		                          	<span class="source">{Source}</span></p>
+		                      	{/block:Source}
+	                      	</div>
 	                  	</li>
 	              	{/block:Quote}
 	              	{block:Link}
@@ -142,9 +139,6 @@
 	              	{/block:Chat}
 	              	{block:Video}
 	                  	<li class="post video" id="{PostID}">
-		                  	<div class="postmeta">
-		                       <div class="date"><a href="{Permalink}">{Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a></div>
-		                 	</div>
 		                    <div class="regular content">
 		                   		<div class="video-container">
 		                        	{Video-500}
@@ -152,6 +146,9 @@
 		                  		{block:Caption}
 		                              <div class="caption">{Caption}</div>
 		                      	{/block:Caption}
+                  			<p class="meta">
+		                   		<span class="meta"><a href="{Permalink}">{Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a></div>
+		                   	</p>
 		                    </div>
 	                  	</li>
 	              	{/block:Video}
