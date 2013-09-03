@@ -1,0 +1,457 @@
+/* 
+Green: #1ace84
+Blue: #3896ff
+*/
+
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}.clearfix{display:inline-block}* html .clearfix{height:1%}.clearfix{display:block}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, font, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+  }
+
+::selection {
+  background: #e3faff;
+  text-shadow: none;
+  }
+  
+strong, b {
+  font-weight: 600;
+  }
+  
+em, i {
+  font-style: italic;
+  }
+
+img {
+  -ms-interpolation-mode: bicubic;
+  }
+
+p img,
+img.photo_img {
+  max-width: 100%;
+  height: auto;
+  background: #ebebeb;
+  }
+
+.video-container, .audio_player_wrap {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  margin: 0 0 25px;
+  }
+
+.audio_player_wrap {
+  padding-bottom: 3px;
+  }
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed,
+.audio_player_wrap iframe,
+.audio_player_wrap object,
+.audio_player_wrap embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  }
+
+ul#posts {
+  list-style: none;
+  }
+
+  
+/* Layout */
+.notes {
+  display: none;
+  }
+  
+body {
+  background: #fff;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  }
+
+.container {
+  padding: 0 35px;
+  max-width: 950px;
+  margin: 0 auto;
+  }
+
+header {
+  margin: 0 auto 130px;
+  height: 86px;
+  padding-top: 74px;
+  }
+
+footer {
+  margin: 0 auto;
+  padding-top: 30px;
+  height: 130px;
+}
+
+header .container,
+footer .container {
+  max-width: 574px;
+  padding: 0;
+  }
+
+.post {
+  padding: 0 0 130px;
+  }
+
+h3, h4, h5, h6, p, pre, blockquote, div.caption, div.conversation_line {
+  max-width: 574px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+ul ul, ul ol {
+  max-width: 534px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  }
+
+p.image {
+  max-width: 100%;
+  margin-top: 51px;
+  margin-bottom: 17px;
+  }
+  
+div.regular_body, div.quote_body, div.caption, div.conversation_line, ul#posts, div#pagers, #header_image_div, div#footer, ul#following, div#post_notes {
+  text-align: left;
+  }
+
+div.photo_div, div.photoset_div, div.html_photoset, #header_image_div, div.album_art_div {
+  line-height: 0;
+  text-align: center;
+  }
+			
+img.album_art_img {
+  width: 200px;
+  }
+
+/* Styles */
+body {
+  font-family: "ff-tisa-web-pro", Georgia, Times, serif;
+  color: #353738;
+  }
+  
+a {
+  color: #1ace84;
+  }
+
+a:hover,
+p.meta a:hover {
+  color: #353738;
+  }
+  
+p, ul ul, ul ol, blockquote, pre, div.caption {
+  font-size: 17px;
+  line-height: 26px;
+  margin-bottom: 17px;
+  }
+
+p b,
+p strong {
+  letter-spacing: -1px;
+  }
+
+blockquote {
+  font-style: italic;
+  color: #888;
+  }
+  
+ul ul,
+ul ol {
+  margin-bottom: 17px;
+  padding-left: 40px;
+  }
+
+ul ul li {
+  list-style-type: circle;
+  }
+
+hr {
+  border-width: 0;
+  border-color: transparent;
+  background: none;
+  margin: 34px 0;
+  text-align: center;
+  color: #ccc;
+  }
+
+hr:after {
+  content: '\266C';
+  }
+
+.photo_div, .photoset_div {
+  margin-bottom: 34px;
+  }
+
+h3 {
+  font-family: "futura-pt", "Helvetica Neue", sans-serif;
+  font-size: 30px;
+  line-height: 39px;
+  margin-bottom: 34px;
+  font-weight: 500;
+  }
+  
+h3 a {
+  color: #353738;
+  padding-bottom: 3px;
+  border-bottom: 3px solid #353738;
+  text-decoration: none;
+  line-height: 48px;
+  }
+
+h3 a:hover {
+  padding-bottom: 6px;
+  border-bottom: none;
+  }
+
+h4 {
+  font-size: 21px;
+  margin-top: 34px;
+  margin-bottom: 17px;
+  }
+
+pre,
+code {
+  font-family: monaco, courier, monospace;
+  color: #999;
+  font-size: 15px;
+  }
+
+code {
+  line-height: 18px;
+  }
+
+p.meta {
+  color: #bbb;
+  font-size: 13px;
+  }
+
+p.meta a {
+  color: #bbb;
+  text-decoration: none;
+  }
+  
+span.tags {
+  display: block;
+  text-transform: capitalize;
+  }
+
+span.tags span:after {
+  content: ",";
+  }
+
+span.tags span:last-child:after {
+  content: none;
+  }
+  
+header {
+/*
+  border-bottom: 1px solid #1ace84;
+  color: #1ace84;
+*/
+  }
+
+header a {
+  text-decoration: none;
+  color: #353738;
+  }
+
+header a:hover {
+  color: #1ace84;
+  }
+
+header p,
+header h1 {
+  font-size: 17px;
+  line-height: 26px;
+  margin: 0;
+  }
+
+footer {
+  border-top: 1px solid #1ace84;
+  color: #1ace84;
+  }
+
+footer p {
+  margin-bottom: 0 0 26px;
+  text-align: center;
+  }
+
+footer p a {
+  padding: 0 0.75em;
+  text-decoration: none;
+  }
+
+footer a.twitter {
+  display: block;
+  margin: 0 auto;
+  height: 36px;
+  width: 36px;
+  background-size: 36px 72px;
+  background-image: url(http://kylemeyer.com/i/twitter_icon.png);
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  }
+
+footer a.twitter:hover {
+  background-position: 50% 0;
+  }
+
+
+
+/* Tools
+------------------------------------------------------------*/
+#tools {
+  max-width: 960px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0 0 52px;
+  }
+
+#tools li img {
+  max-width: 480px;
+  float: left;
+  }
+
+#tools img {
+  max-width: 100%;
+  height: auto;
+  background: #ebebeb;  
+  }
+
+#tools li {
+  margin-bottom: 78px;
+  }
+
+#tools h3 {
+  margin-top: 39px;
+  }
+
+#tools li div {
+  max-width: 450px;
+  float: right;
+  }
+
+#tools li a:hover img {
+  opacity: 0.9;
+  }
+
+#tools li div p span {
+  color: #999;
+  font-size: 0.8em;
+  }
+
+
+/* Work
+------------------------------------------------------------*/
+#work .container {
+  width: 980px;
+  margin: 0 auto 78px;
+}
+
+
+
+/* Mobile Sauce
+------------------------------------------------------------*/
+@media screen and (max-width: 980px) {
+#tools {
+  margin: 0 auto;
+  max-width: 480px;
+  }
+
+#tools h3 {
+  margin-top: 13px;
+  text-align: center;
+  }
+
+#tools li div, #tools li img {
+  float: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+#tumblr_controls {
+  display: none!important;
+  }
+  
+body {
+  -webkit-text-size-adjust: none;
+  }
+ 
+.container {
+  padding: 0;
+  }
+        
+footer .container, header .container {
+  width: 90%;
+  padding-left:5%;
+  padding-right:5%;
+  }
+
+p img,
+img.photo_img {
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+h3, h4, h5, h6, p, pre, blockquote, div.caption, div.conversation_line {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+div.caption p {
+  max-width: 100%;
+  }
+
+#tools li div, #tools li img {
+  max-width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  float: none;
+  }
+
+#tools li p {
+  max-width: 100%;
+  }
+
+#tools li>a {
+  text-align: center;
+  display: block;
+  }
+
+#tools h3 {
+  margin-bottom: 13px;
+  }
+
+}
