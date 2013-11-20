@@ -1,0 +1,54 @@
+
+<html>
+  <head>
+    <title>Brian Bailey / Work</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <link href="http://assets.bailey.is/css/seattle.css" type="text/css" rel="stylesheet" />
+    <meta name="author" content="Brian Bailey">
+    <meta name="description" content="Brian Bailey is a producer of quality digital products and an avid cyclist in Washington, DC.">
+    <meta name="keywords" content="Brian Bailey, Bailey, user experience, user interface, web producer, UX, UI, interaction design, Seattle, Washington, DC">
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <p><a href="http://blog.bailey.is/">Brian Bailey &#8212;</a><br/><a href="http://blog.bailey.is/">Blog</a>, <a href="http://www.twitter.com/bbaiIey">Twitter</a>, <a href="http://bailey.is/">About</a>, <a href="http://blog.bailey.is/ask">Ask</a>, <a href="/work/">Work</a>.</p>
+      </div>
+    </header>
+    <h3><a href="http://features.pewforum.org/muslim-population-graphic/">The Future of the Global Muslim Population</a></h3>
+        <p>These maps allow users to select a country, a region or the world &#8212; as well as decade &#8212; and see the size of the Muslim population in that place and time.</p>
+        <p>The feature covers 232 countries and territories over five decades, including population estimates for 1990-2010 and estimates for 2020 and 2030.</p>
+        <p class="role"><b>role:</b> user interface design and information architecture</p>
+    
+    <ul id="tools">
+      <li class="clearfix">
+        <a href="http://features.pewforum.org/muslim-population-graphic/"><img src="http://assets.bailey.is/img/work/pew_muslim_population.png" /></a>
+        <div>
+        <h3><a href="#">Outcome</a></h3>
+        <p class="role"><b>role:</b> Defining the intended outcome</p>
+        <p>Defining the inten</p>
+        </div>
+      </li>
+    </ul>
+
+    <footer>
+      <div class="container">
+        <p><a href="http://blog.bailey.is/">Check out the blog <span>&rsaquo;</span></a></p>
+        <a class="twitter" href="http://twitter.com/bbaiiey">Follow @bbaiIey on Twitter</a>
+      </div>
+    </footer>
+    
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-35836936-1']);
+      _gaq.push(['_setDomainName', 'bailey.is']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

@@ -2,11 +2,11 @@
     <head>
         <meta charset="utf-8">
         <title>{block:PostTitle}{PostTitle} - {/block:PostTitle} Brian Bailey</title>
-    	<meta name="google-site-verification" content="bHpKr_cn8-Y9E1fngEtIIoiFeA6d1dQHBqTRzk0dYjw" />
-      	<meta description="Brian Bailey is a Washington, D.C.-based web producer and technical writer." />
-      	<meta keywords="Brian Bailey, bailey.is, bailey, baiiey, bbaiiey, web producer, technical writer, tech writer, user experience, project management, web project managment, user interface, ux, ui, web developer" />
+        <meta name="google-site-verification" content="bHpKr_cn8-Y9E1fngEtIIoiFeA6d1dQHBqTRzk0dYjw" />
+          <meta description="Brian Bailey is a Washington, D.C.-based web producer and technical writer." />
+          <meta keywords="Brian Bailey, bailey.is, bailey, baiiey, bbaiiey, web producer, technical writer, tech writer, user experience, project management, web project managment, user interface, ux, ui, web developer" />
         <meta name="viewport" content="width=device-width, initial-scale=1" id="viewport" />
-      	<link rel="icon" href="{Favicon}" />
+          <link rel="icon" href="{Favicon}" />
       	<link rel="alternate" type="application/rss+xml" title="RSS" href="{RSS}" />
       	<link rel="stylesheet" href="http://static.tumblr.com/lpiibdu/NEJljwkzi/reset.2.8.1.yui.css">
       	<link rel="stylesheet" href="http://assets.bailey.is/css/seattle.css">  
@@ -31,8 +31,8 @@
 	<body>
 		<header> 
 			<div class="container">
-		            <p><a href="/">Brian Bailey &#8212;</a><br/><a href="/">Blog</a>, <a href="http://www.twitter.com/bbaiIey">Twitter</a>, <a href="http://bailey.is">About</a></p>
-	        </header>
+		            <p><a href="/">Brian Bailey &#8212;</a><br/><a href="/">Blog</a>, <a href="http://www.twitter.com/bbaiIey">Twitter</a>, <a href="http://bailey.is">About</a>, <a href="/ask">Ask</a>, <a href="http://bailey.is/work">Work</a>.</p>
+        </header>
   	
   		   
 	        {block:HasPages} 
@@ -51,19 +51,25 @@
 	              	{block:Text}
 	                  	<li class="post text" id="{PostID}">
                         	<div class="regular content">
-                          	{block:Title}
-                              	<h3><a href="{Permalink}">{Title}</a></h3>
-                          	{/block:Title}
-                          		<div class="regular_body">{Body}</div>
-                  			</div>
-                  			<p class="meta">
-		                   		<span class="meta"><a href="{Permalink}">{Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a></div>
-		                   	</p>
+	                          	{block:Title}
+	                              	<h3><a href="{Permalink}">{Title}</a></h3>
+	                          	{/block:Title}
+	                          		<div class="regular_body">{Body}</div>
+	                  			</div>
+	                  			{block:Date}
+		                  			<p class="meta">
+				                   		Posted on: <a href="{Permalink}">{Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a>
+				                   	</p>
+			                   	{/block:Date}
+	                   			{block:Photos}
+	                  				<img src="{PhotoURL-1280}" alt="{PhotoAlt}" class="photo_img"/>
+	              				{/block:Photos}
+              				</div>
 	                  	</li>
 	              	{/block:Text}
 	              	{block:Photo}
 	              		<li>
-		              		<div class="photo content">
+		              		<div class="photo content post">
 			                  	<div class="photo_div">
 			                  		{block:Title}
 			                      		<h3><a href="{Permalink}">{Title}</a></h3>
@@ -73,8 +79,8 @@
 			                        	<div class="caption">{Caption}</div>
 			                      	{/block:Caption}
 			                	</div>
-			                   	<p class="meta">
-			                   		<span class="meta"><a href="{Permalink}">{Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a></div>
+	                  			<p class="meta">
+			                   		Posted on: <a href="{Permalink}">{Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a>
 			                   	</p>
 		                  </div>
 	              		</li>
@@ -91,14 +97,14 @@
 	                          		<div class="caption">{Caption}</div>
 	                          	{/block:Caption}
 	                        </div>
-                  			<p class="meta">
-		                   		<span class="meta"><a href="{Permalink}">{Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a></div>
-		                   	</p>
+	                  			<p class="meta">
+			                   		Posted on: <a href="{Permalink}">{Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a>
+			                   	</p>
 	                      </li>
 	              	{/block:Photoset}
 	              	{block:Quote}
 	                  	<li class="post text" id="{PostID}">
-	                  		<div class="regular content regular_body">
+	                  		<div class="regular content regular_body" style="text-align: center;">
 		                  		<p>"{Quote}"<br/>
 		                      	{block:Source}
 		                          	<span class="source">{Source}</span></p>
@@ -146,9 +152,9 @@
 		                  		{block:Caption}
 		                              <div class="caption">{Caption}</div>
 		                      	{/block:Caption}
-                  			<p class="meta">
-		                   		<span class="meta"><a href="{Permalink}">{Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a></div>
-		                   	</p>
+	                  			<p class="meta">
+			                   		Posted on: <a href="{Permalink}">{Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a>
+			                   	</p>
 		                    </div>
 	                  	</li>
 	              	{/block:Video}
@@ -166,20 +172,22 @@
 	                  	</li>
 	              	{/block:Audio}
 	          	{/block:Posts}
-
-	        	{block:Pagination}
-	                <div id="pagers">               
-	              		<p style="margin-bottom:12px;">Page {CurrentPage} of {TotalPages}</p>
-	                		{block:PreviousPage}
-	                  			<p><a href="{PreviousPage}">&larr; Newer</a>
-	                		{/block:PreviousPage}
-	                		{block:NextPage}
-	                  			<a href="{NextPage}">Older &rarr;</a></p>
-	                		{/block:NextPage}
-	        		</div>  
-	            {/block:Pagination}
 	        </ul>     
-      	</div>
+      	
+      	<footer>
+      		<div class="container">
+      			{block:Pagination}
+					<p>{block:PreviousPage}
+                		<a href="{PreviousPage}"><span>&lsaquo;</span> Previous Posts</a>
+           			{/block:PreviousPage}
+           			{block:NextPage}
+                		<a href="{NextPage}">More Posts <span>&rsaquo;</span></a>
+            		{/block:NextPage}</p>
+      			{/block:Pagination}
+      			<p></p>
+      			<a class="twitter" href="https://twitter.com/bbaiIey">Follow @bbaiIey on Twitter</a>
+      		</div>
+      	</footer>
 
 	    <script type="text/javascript" src="http://static.tumblr.com/lpiibdu/GgVljwkyh/mootools.1.2.3.yui.js"></script>
 	    <script type="text/javascript">
@@ -237,5 +245,5 @@
 	        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	      })();
 	    </script>
-  </body>
+	</body>
 </html>

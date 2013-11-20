@@ -3,6 +3,8 @@ Green: #1ace84
 Blue: #3896ff
 */
 
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600);
+
 .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}.clearfix{display:inline-block}* html .clearfix{height:1%}.clearfix{display:block}
 
 html, body, div, span, applet, object, iframe,
@@ -13,15 +15,15 @@ small, strike, sub, sup, tt, var,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-weight: inherit;
-	font-style: inherit;
-	font-size: 100%;
-	font-family: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
   }
 
 ::selection {
@@ -145,14 +147,14 @@ div.photo_div, div.photoset_div, div.html_photoset, #header_image_div, div.album
   line-height: 0;
   text-align: center;
   }
-			
+      
 img.album_art_img {
   width: 200px;
   }
 
 /* Styles */
 body {
-  font-family: "ff-tisa-web-pro", Georgia, Times, serif;
+  font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #353738;
   }
   
@@ -169,6 +171,10 @@ p, ul ul, ul ol, blockquote, pre, div.caption {
   font-size: 17px;
   line-height: 26px;
   margin-bottom: 17px;
+  }
+
+div.caption {
+  margin-top: 35px;
   }
 
 p b,
@@ -209,7 +215,7 @@ hr:after {
   }
 
 h3 {
-  font-family: "futura-pt", "Helvetica Neue", sans-serif;
+  font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 30px;
   line-height: 39px;
   margin-bottom: 34px;
@@ -313,7 +319,7 @@ footer a.twitter {
   height: 36px;
   width: 36px;
   background-size: 36px 72px;
-  background-image: url(http://kylemeyer.com/i/twitter_icon.png);
+  background-image: url(http://assets.bailey.is/img/twitter_icon.png);
   background-repeat: no-repeat;
   background-position: 50% 100%;
   text-indent: 100%;
@@ -376,7 +382,14 @@ footer a.twitter:hover {
   width: 980px;
   margin: 0 auto 78px;
 }
-
+.role {
+  font-weight: 300;
+  font-variant: small-caps;
+}
+.role b {
+  font-weight: 600;
+  font-variant: small-caps;
+}
 
 
 /* Mobile Sauce
